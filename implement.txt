@@ -1,0 +1,5 @@
+python ukn_pipeline.py generate --out_dir data --train_N 20000 --test_N 4000 --T 200 --seed 0
+
+python ukn_pipeline.py train --data_dir data --results_dir results/run1 --epochs 50 --batch_size 128 --lr 1e-3
+
+python ukn_pipeline.py plot --results_dir results/run1 --example_idx 0
